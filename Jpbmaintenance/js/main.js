@@ -1,66 +1,81 @@
-//  Burger menu
-var hamBurger = document.querySelector(".hamburger");
-var navMenu = document.querySelector(".nav-menu");
-hamBurger.addEventListener("click", function () {
-    hamBurger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+"use strict";
+/*
+ *Nav menu functionalit
+ */
+const hamBurger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+hamBurger.addEventListener("click", () => {
+  hamBurger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
-navMenu.addEventListener("click", function () {
-    hamBurger.classList.remove("active");
-    navMenu.classList.remove("active");
+navMenu.addEventListener("click", () => {
+  hamBurger.classList.remove("active");
+  navMenu.classList.remove("active");
 });
-document.querySelectorAll("nav-menu").forEach(function () {
-    hamBurger.classList.remove("active");
-    navMenu.classList.remove("active");
+document.querySelectorAll("nav-menu").forEach(() => {
+  hamBurger.classList.remove("active");
+  navMenu.classList.remove("active");
 });
-// Setting the date dynamically
-var date = document.querySelector("#date");
+/*
+ *Danamically updating the time every year
+ */
+const date = document.querySelector("#date");
 date.textContent = new Date().getFullYear();
-// Scroll button
-//   Getting the button from the document
-var btn = document.querySelector("#myBtn");
+/*
+ *Scroll button
+ */
+const btn = document.querySelector("#myBtn");
 function scrollFunction() {
-    // display button when the user scrolls past a certain amount of pixels from the top of the page
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        btn.style.display = "block";
-    }
-    else {
-        btn.style.display = "none";
-    }
+  // display button when the user scrolls past a certain amount of pixels
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
 }
-// Clicking on the button will send the user to the top of the page
 function topScroll() {
-    document.body.scrollTop = 0; // Safari browser
-    document.documentElement.scrollTop = 0; // Chrome, Firebox, Ie, Opera
+  document.body.scrollTop = 0; // Safari browser
+  document.documentElement.scrollTop = 0; // Chrome, Firebox, Ie, Opera
 }
-//  when the user scrolls down from the top of the document show button
-window.onscroll = function () {
-    scrollFunction();
+window.onscroll = () => {
+  scrollFunction();
 };
-// Slider
-var slides = document.querySelectorAll(".slide");
-var nextBtn = document.querySelector(".nextBtn");
-var prevBtn = document.querySelector(".prevBtn");
-slides.forEach(function (slide, index) {
-    slide.style.left = "".concat(index * 100, "%");
+/*
+ *Slider
+ */
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".nextBtn");
+const prevBtn = document.querySelector(".prevBtn");
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
 });
-var counter = 0;
-nextBtn.addEventListener("click", function () {
-    counter++;
-    carousel();
+let counter = 0;
+nextBtn.addEventListener("click", () => {
+  counter++;
+  carousel();
 });
-prevBtn.addEventListener("click", function () {
-    counter--;
-    carousel();
+prevBtn.addEventListener("click", () => {
+  counter--;
+  carousel();
 });
-var carousel = function () {
-    if (counter === slides.length) {
-        counter = 0;
-    }
-    if (counter < 0) {
-        counter = slides.length - 1;
-    }
-    slides.forEach(function (slide) {
-        slide.style.transform = "translateX(-".concat(counter * 100, "%)");
-    });
+const carousel = () => {
+  if (counter === slides.length) {
+    counter = 0;
+  }
+  if (counter < 0) {
+    counter = slides.length - 1;
+  }
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
 };
+/*
+ *Alert for when the user clickedon the send button
+ */
+const screenAlert = document.querySelector("form-control-submit");
+const formControl = document.querySelector(".form-control");
+screenAlert.addEventListener("click", () => {
+  alert("Thank you for contacting us, We will get back to you shortly");
+  formControl.textContent = "";
+});
+//# sourceMappingURL=main.js.map
