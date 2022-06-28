@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Wisper Dev</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <!-- <a href="#" class="nav-heading"><img src="./img/JPB1.1.png" alt=""></a> -->
+        <div class="logo">
+          <h3>Wisper Dev</h3>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="#section-d">Contact</a></li>
+          <li><a class="nav-link" href="#section-b">Services</a></li>
+        </ul>
+        <a href="#contactUs" class="btn headerBtn"> Contact us </a>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Showcase -->
+    <div id="showcase" class="grid">
+      <div class="bg-image"></div>
+      <div class="content-wrap">
+        <h1>Welcome to wisper dev Solutions</h1>
+        <p>Creating software to impress</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- Main Area -->
+    <main id="main">
+      <!-- Section A -->
+      <section id="section-a" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Website development</h2>
+          <div class="content-text">
+            <p>
+              Html, CSS and javascript websites built to be fast Designed to
+              exceed your initial expectations.
+            </p>
+          </div>
+        </div>
+        <!-- Logo design -->
+        <div class="content-wrap">
+          <h2 class="content-title">Logo design</h2>
+          <div class="content-text">
+            <p>
+              If you don't have a logo for your website we can create one for
+              you
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section A end -->
+
+      <!-- Section B -->
+
+      <section id="section-b" class="grid">
+        <ul>
+          <li>
+            <div class="card">
+              <img src="./img/pexels-rahul-pandit-1933900.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Static html pages</h3>
+                <div class="content-text">
+                  <p>
+                    If you want more control over the styling of your website we
+                    use HTML, CSS and javascript to customize your website to
+                    your liking
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="card">
+              <img src="./img/pexels-markus-winkler-4176249.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Wordpress</h3>
+                <div class="content-text">
+                  <p>
+                    Why not use it 43% of the websites on the internet was built
+                    with wordpress
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="card">
+              <img src="./img/pexels-neven-krčmarek-3350123.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Logo design</h3>
+                <div class="content-text">
+                  <p>We can create one for you if you don't have one</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section c -->
+      <section id="section-d" class="grid">
+        <div class="box">
+          <h2 class="content-title">Contact Us</h2>
+          <p>We will respond as quickly as we can</p>
+          <div class="form" id="contactUs">
+            <form action="#">
+              <label for="fname">First name</label>
+              <input
+                type="text"
+                id="fname"
+                name="Firstname"
+                placeholder="Firstname"
+              />
+
+              <label for="lname">Surname</label>
+              <input
+                type="text"
+                id="lname"
+                name="Lastname"
+                placeholder="Lastname"
+              />
+
+              <label for="message">Your Message</label>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Your message"
+              />
+
+              <input type="submit" value="submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- back to top -->
+    <div class="back-to-top">
+      <button id="back-to-top-btn">Top</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

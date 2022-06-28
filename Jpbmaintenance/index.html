@@ -1,253 +1,309 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jpb Maintenance-Structural-steelwork&Maintenance</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Using css flexbox for layout positioning -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jpb Maintenance-Structural-steelwork&Maintenance</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<!-- Using css grid and flexbox for layout positioning -->
+  <body>
+    <!-- Heading section -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-image">
+          <img src="./img/JPB1.1.png" alt="" />
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="#about-us">About</a></li>
+          <li><a class="nav-link" href="#cards">Services</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
 
-<body>
-  <!-- Heading section -->
-  <header>
-    <nav class="navbar">
-      <div class="nav-image">
-        <img src="./img/JPB1.1.png" alt="">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- Intro image -->
+      <div class="intro">
+        <div class="banner">
+          <h1>Structural steelwork & Maintenance</h1>
+          <p>
+            Building and installation of Carports, Entrance gates, Security
+            Gates
+          </p>
+          <p>Waterproofing and painting</p>
+        </div>
+        <!-- <a href="contact.html"><button class="intro-btn">Get a Qoute</button></a> -->
       </div>
-      <ul class="nav-menu">
-        <li><a class='nav-link' href="index.html">Home</a></li>
-        <li><a class='nav-link' href="#about-us">About</a></li>
-        <li><a class='nav-link' href="gallery.html">Gallery</a></li>
-        <li><a class='nav-link' href="#cards">Services</a></li>
-        <li><a class='nav-link' href="contact.html">Contact</a></li>
-      </ul>
+    </header>
 
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-
-    <!-- Intro image -->
-    <div class='intro'>
-      <div class="banner">
-        <h3>Structural steelwork & Maintenance</h3>
-        <p>Building and installation of Carports, Entrance gates, Security Gates</p>
-        <p>Waterproofing and painting</p>
-        <a href="contact.html"><button class="btn">Get a Qoute</button></a>
-      </div>
-      <!-- <a href="contact.html"><button class="intro-btn">Get a Qoute</button></a> -->
-    </div>
-  </header>
-
-  <!-- Our services -->
-  <!-- 
+    <!-- Our services -->
+    <!-- 
     The section will be broken up into 5 divs(Containers)
     Each containing a Logo, Text
     The back of the card will contain text and a button
   -->
-   <!-- Section A -->
-   <section id="section-a">
-    <h1>Services<span style="font-size: 30px;"><b>&#8595;</b></span></h1>
-    <div class="container card-container" id="split">
-      <div class="card">
-        <div class="card-image image1"></div>
-        <h2>Carports</h2>
+    <!-- Section A -->
+    <section class="section-a" id="cards">
+      <div class="text-container">
+        <h1>
+          Services<span><b>&#8595;</b></span>
+        </h1>
       </div>
-      
-      <div class="card">
-        <div class="card-image image2"></div>
-        <h2>Palisade and pool fences</h2>
+      <div class="container card-container split">
+        <div class="card">
+          <div class="card-image image1"></div>
+          <h2>Carports</h2>
+        </div>
+
+        <div class="card">
+          <div class="card-image image2"></div>
+          <h2>Palisade and pool fences</h2>
+        </div>
+
+        <div class="card">
+          <div class="card-image image3"></div>
+          <h2>Security Gates</h2>
+        </div>
+
+        <div class="card">
+          <div class="card-image image4"></div>
+          <h2>Waterproofing</h2>
+        </div>
+
+        <div class="card">
+          <div class="card-image image5"></div>
+          <h2>Braai's and Boma's</h2>
+        </div>
       </div>
-      
-      <div class="card">
-        <div class="card-image image3"></div>
-        <h2>Security Gates</h2>
-      </div>
+    </section>
 
-      <div class="card">
-        <div class="card-image image4"></div>
-        <h2>Waterproofing</h2>
-      </div>
-
-      <div class="card">
-        <div class="card-image image5"></div>
-        <h2>Braai's and Boma's</h2>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Contact us section-->
-   <section class="contact-form-sec" id="contact-us">
-      <div class="text-content">
-        <h1>Contact us</h1>
-        <p>Feel free to get in touch with us for a free qoute</p>
-      </div>
-      <!-- Contact form -->
-      <div class="contact-form">
-        <form method="POST" action="contact.php">
-          <input type="text" class="form-control" name="name" placeholder="Name" required />
-          <br />
-          <input type="text" class="form-control" name="Surname" placeholder="Surname" required />
-          <br>
-          <input type="email" class="form-control" name="email" placeholder="Email Address" required />
-          <br />
-          <textarea class="form-control" name="message" placeholder="Message" row="4" required></textarea>
-          <br />
-          <input type="submit" name='submit' class="form-control-submit btn" value="Send" />
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Recent projects -->
-  <!--  
+    <!-- Recent projects -->
+    <!--  
     The section will be broken into 2
     1: Text
     2: Images of the past projects we have done
   -->
-  <section id="section-b">
-    <!-- Image box-->
-    <div class="carousel-text">
-      <h1>Recent projects</h1>
-    </div>
-    
-    <div class="slider-container">
-      <div class="slide">
-        <img src="./img/carport2.jpg" alt="slide-image"  class="slide-img">
+    <section id="section-b">
+      <!-- Image box-->
+      <div class="carousel-text">
+        <h1>
+          Recent projects<span><b>&#8595;</b></span>
+        </h1>
       </div>
 
-      <div class="slide">
-        <img src="./img/palisade.jpg" alt="slide-image" class="slide-img">
+      <div class="slider-container">
+        <div class="slide">
+          <img src="./img/carport2.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/palisade.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image2.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image3.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image4.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image5.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image6.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img src="./img/image7.jpg" alt="slide-image" class="slide-img" />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./img/WhatsApp Image 2022-02-18 at 9.20.21 AM.jpeg"
+            alt="slide-image"
+            class="slide-img"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./img/WhatsApp Image 2022-02-18 at 9.20.22 AM (1).jpeg"
+            alt="slide-image"
+            class="slide-img"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./img/WhatsApp Image 2022-02-18 at 9.20.22 AM.jpeg"
+            alt="slide-image"
+            class="slide-img"
+          />
+        </div>
+        <a class="prevBtn">&#10094;</a>
+        <a class="nextBtn">&#10095;</a>
+      </div>
+    </section>
+    <!-- Contact us section-->
+    <section class="contact-form-sec" id="contact">
+      <div class="text-content">
+        <h1>Contact us</h1>
+      </div>
+      <div class="split-content grid">
+        <!-- Contact form -->
+        <div class="contact-form">
+          <form method="POST" action="contact.php">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              class="form-control"
+              name="Surname"
+              placeholder="Surname"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <br />
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Message"
+              row="4"
+              required
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              name="submit"
+              class="form-control-submit btn"
+              value="Send"
+            />
+          </form>
+        </div>
+
+        <div class="our-socials">
+          <h1>Our Socials</h1>
+          <div class="text-container">
+            <p>
+              Fill in the form for a free qoute or visit our Socials to get in
+              touch with us
+            </p>
+          </div>
+          <div class="icons">
+            <div class="icons-inner">
+              <a href="#">
+                <img src="./img/icons/facebook.png" alt="facebook logo" />
+              </a>
+              <a href="#">
+                <img src="./img/icons/linkiden.png" alt="facebook logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section-->
+    <footer id="main-footer">
+      <div class="footer-logo">
+        <img src="./img/JPB1.1.png" alt="logo" />
       </div>
 
-      <div class="slide">
-        <img src="./img/roof.jpeg" alt="slide-image" class="slide-img">
+      <div class="left-footer">
+        <h1>Our details</h1>
+        <div class="left-footer-text">
+          <ul>
+            <li>
+              <span class="material-icons" style="font-size: 20px"> call </span>
+              0718920302
+            </li>
+            <li>
+              <span class="material-icons" style="font-size: 20px">
+                whatsapp
+              </span>
+              0825606114
+            </li>
+            <li>
+              <span class="material-icons" style="font-size: 20px">
+                email
+              </span>
+              paul@jpbmaintenance.co.za
+            </li>
+            <li>
+              <span class="material-icons" style="font-size: 20px">
+                email
+              </span>
+              info@jpbmaintenance.co.za
+            </li>
+            <li>
+              <span class="material-icons" style="font-size: 20px"> home </span>
+              5A Estcourt Avenue, Wierdapark, Centurion
+            </li>
+            <li>
+              <span class="material-icons" style="font-size: 20px">
+                schedule
+              </span>
+              Monday to Friday: 08:00 to 16:30
+            </li>
+          </ul>
+        </div>
       </div>
 
-       <div class="slide">
-        <img src="./img/image2.jpg" alt="slide-image" class="slide-img">
+      <div class="right-footer" id="about-us">
+        <h1>About Jpb Maintenance</h1>
+        <p>
+          We manufature and install Carports, Entrance gates, Security Gates and
+          provide <br />Maintenance in and around your home
+        </p>
       </div>
+    </footer>
 
-       <div class="slide">
-        <img src="./img/image3.jpg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/image4.jpg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/image5.jpg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/image6.jpg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/image7.jpg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/WhatsApp Image 2022-02-18 at 9.20.21 AM.jpeg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/WhatsApp Image 2022-02-18 at 9.20.22 AM (1).jpeg" alt="slide-image" class="slide-img">
-      </div>
-
-       <div class="slide">
-        <img src="./img/WhatsApp Image 2022-02-18 at 9.20.22 AM.jpeg" alt="slide-image" class="slide-img">
-      </div>
-        <a class="prevBtn ">&#10094;</a>
-        <a class="nextBtn ">&#10095;</a>
-    </div>
-  </section>
-
-
-  <button onclick="topScroll()" id="myBtn" title="Go to top">Top</button>
-
-  <!-- Footer section-->
-  <!-- 
-    The footer will be split into 3 div containers
-    Container 1 The logo
-    Container 2 Contact details
-    Container 3 About us
-   -->
-  <footer id="main-footer">
-
-    <div class="footer-logo">
-      <img src="./img/JPB1.1.png" alt="logo">
-    </div>
-
-    <div class="left-footer">
-      <h1>Our details</h1>
-      <ul>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            call
-          </span>
-          0718920302
-        </li>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            whatsapp
-          </span>
-          0825606114
-        </li>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            email
-          </span>
-          paul@jpbmaintenance.co.za
-        </li>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            email
-          </span>
-          info@jpbmaintenance.co.za
-        </li>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            home
-          </span> 5A Estcourt Avenue, Wierdapark, Centurion
-        </li>
-        <li>
-          <span class="material-icons" style="font-size: 20px;">
-            schedule
-          </span>
-          Monday to Friday: 08:00 to 16:30
-        </li>
-      </ul>
-    </div>
-   
-
-    <div class="right-footer">
-      <h1>About Jpb Maintenance</h1>
-      <p>We manufature and install Carports, Entrance gates, Security Gates and we provide Waterproofing and painting
-      </p>
-    </div>
-
-  </footer>
-
-  <footer class="bottom-footer">
+    <footer class="bottom-footer">
       <div>
-        <p><span id="date">©</span> | Jpb Maintenance | All rights reserved | </p>
+        <p>
+          <span id="date">©</span> | Jpb Maintenance | All rights reserved |
+        </p>
       </div>
-  </footer>
+    </footer>
 
-
-  <!-- Javascript -->
-  <script src="./js/main.js"></script>
-
-</body>
-
+    <button onclick="topScroll()" id="myBtn" title="Go to top" class="pulse">
+      Top
+    </button>
+    <!-- Javascript -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

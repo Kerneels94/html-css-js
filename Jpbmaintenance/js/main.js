@@ -27,7 +27,10 @@ date.textContent = new Date().getFullYear();
 const btn = document.querySelector("#myBtn");
 function scrollFunction() {
   // display button when the user scrolls past a certain amount of pixels
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";
@@ -69,13 +72,4 @@ const carousel = () => {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 };
-/*
- *Alert for when the user clickedon the send button
- */
-const screenAlert = document.querySelector("form-control-submit");
-const formControl = document.querySelector(".form-control");
-screenAlert.addEventListener("click", () => {
-  alert("Thank you for contacting us, We will get back to you shortly");
-  formControl.textContent = "";
-});
 //# sourceMappingURL=main.js.map
